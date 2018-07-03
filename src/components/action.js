@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Icon from './schedule/icon';
+import Icon from './icon';
 
 class Action extends Component {
     render() {
