@@ -22,6 +22,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+    z-index: -5;
 }
 
 .gradient {
@@ -29,5 +30,5 @@
     height: 100%;
     width: 100%;
     background: linear-gradient(120deg, $color-purple 0%, $color-light-blue 100%);
-    z-index: -1;
+    z-index: -10;
 }
