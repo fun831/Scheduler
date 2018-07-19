@@ -1,15 +1,19 @@
 .schedule {
-    display: grid;
     grid-column: schedule-s/schedule-e;
     grid-row: 1/-1;
-    grid-template-rows: 100px repeat(auto-fill, 75px) [progress-s] 76px [progress-e];
-    grid-row-gap: 20px;
-    align-items: center;
-    justify-items: center;
-
     position: relative;
     height: 100%;
     width: 100%;
+    
+    display: grid;
+    grid-template-rows: 100px repeat(5, 80px) [progress-s] 76px [progress-e];
+    grid-row-gap: 22px;
+    align-items: center;
+    justify-items: center;
+
+    align-content: center;
+
+    
     z-index: -5;
     
     &__title {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Icon from './icon';
 
 class Action extends Component {
 
@@ -13,15 +12,15 @@ class Action extends Component {
         this.props.onClick()
 
         if(!this.status){
-            document.getElementById(this.id).classList.add('action__remove');
+            document.getElementById(this.id).classList.add('action-remove');
         } else {
-            document.getElementById(this.id).classList.remove('action__remove');
+            document.getElementById(this.id).classList.remove('action-remove');
         }
         this.status = !this.status
     }.bind(this)
     
     render() {
-        this.id = `action${this.props.id}`
+        this.id = `action ${this.props.id}`
         return (
             <a 
                 id={this.id}
@@ -29,12 +28,6 @@ class Action extends Component {
                 className={`${this.props.className} action`}>
             </a>
         );
-        // return (
-        //     <button onClick={() => this.props.onClick()} className={`${this.props.className} action`}>
-        //         { Icon('fas fa-plus-circle') }
-        //         {/* { Icon('fas fa-times-circle') } */}
-        //     </button>
-        // );
     }
 }
 export default Action
