@@ -6,18 +6,20 @@
     width: 100%;
     
     display: grid;
-    grid-template-rows: [space-one-s] 1fr [space-one-e title-s] 100px [title-e] repeat(5, 80px) [progress-s] 1fr [progress-e];
+    grid-template-rows: [space-one-s] 1fr [space-one-e] repeat(5, 80px) [progress-s] 1fr [progress-e];
     grid-row-gap: 22px;
     align-items: center;
     justify-items: center;
 
-    align-content: center;
+    align-content: start;
 
+    padding-top: 237px;
     
     z-index: -5;
     
     &__title {
-        grid-row: title-s/title-e;
+        position: absolute;
+        top: 154px;
         @include border-left;
         color: white;
         font-family: $font-alegreya;
